@@ -1,6 +1,0 @@
-Hello. This is testing clone
-.
-
-This is edited
-
-New Edit
