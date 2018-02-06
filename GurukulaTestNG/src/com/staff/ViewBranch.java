@@ -14,12 +14,12 @@ import org.testng.annotations.Test;
 public class ViewBranch {
 	//UserLogin addNewBranch  = new UserLogin();
 
-	@Test(description="View details of a Branch",dependsOnGroups= {"UserLogin.login"},enabled=true)
+	@Test(priority=5,description="View details of a Branch",dependsOnGroups= {"UserLogin.login"},enabled=true)
 	public void viewBranch() throws InterruptedException {
 			 //Selecting the Branch info
 			Thread.sleep(3000);
 			
-			
+			UserLogin.driver.findElement(By.xpath("//*[@id=\"navbar-collapse\"]/ul/li[1]/a[2]/span[2]")).click();
 			UserLogin.entities.click();
 			String s= UserLogin.entities.getText();
 			System.out.println("The entities link containing Branch and Staff dropdown: "+s);

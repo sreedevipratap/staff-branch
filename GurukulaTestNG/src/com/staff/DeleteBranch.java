@@ -20,13 +20,15 @@ public class DeleteBranch {
 	public static String title;
 	
 	
-@Test(description="Delete a Branch",dependsOnGroups= {"UserLogin.login"},enabled=true)
+@Test(priority=9,description="Delete a Branch",dependsOnGroups= {"UserLogin.login"},enabled=true)
 public void delBranch() throws InterruptedException {
 		 //Selecting the Branch info
+	Thread.sleep(3000);
+		UserLogin.driver.findElement(By.xpath("//*[@id=\"navbar-collapse\"]/ul/li[1]/a[2]/span[2]")).click();
 		UserLogin.entities.click();
 		String s= UserLogin.entities.getText();
 		System.out.println(s);
-		//Thread.sleep(3000);
+		
 		
 		//Navigate to the Branch page
 		//driver.findElement(By.xpath("//div[@id='navbar-collapse']/ul/li[2]/ul/li[1]/a/span[2]")).click();//copy as xpath
@@ -42,9 +44,9 @@ public void delBranch() throws InterruptedException {
 		
 		 //Delete an existing branch
 		//driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[4]/table/tbody/tr[2]/td[4]/button[3]")).click();//copy as xpath
-		  
+		  Thread.sleep(2000);
 		 //UserLogin.driver.findElement(By.xpath("//button[@href='#/branch/2']//following::button[2]")).click();
-		 UserLogin.driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[4]/table/tbody/tr[4]/td[4]/button[3]")).click();
+		 UserLogin.driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[4]/table/tbody/tr[2]/td[4]/button[3]")).click();
 		 Thread.sleep(3000);
 		 		 
 		 UserLogin.driver.findElement(By.xpath("//*[@id='deleteBranchConfirmation']/div/div/form/div[3]/button[2]")).click();

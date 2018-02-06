@@ -19,10 +19,11 @@ public class EditBranch {
 	public static String actual;
 	public static String title;
 
-	@Test(description="Edit Branch Details",dependsOnGroups= {"UserLogin.login"},enabled=true)
+	@Test(priority=6,description="Edit Branch Details",dependsOnGroups= {"UserLogin.login"},enabled=true)
 	@Parameters({"shortbrName","brName","code"})
 	public void editBranch(String shortbrName,String brName,String code) throws InterruptedException {
 			 //Selecting the Branch info
+		UserLogin.driver.findElement(By.xpath("//*[@id=\"navbar-collapse\"]/ul/li[1]/a[2]/span[2]")).click();
 		UserLogin.entities.click();
 		String s= UserLogin.entities.getText();
 		System.out.println(s);
@@ -37,9 +38,9 @@ public class EditBranch {
 			 
 			 
 			//Edit an existing branch
-			//driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[4]/table/tbody/tr[2]/td[4]/button[2]")).click();//copy as xpath
+			UserLogin.driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[4]/table/tbody/tr[2]/td[4]/button[2]")).click();//copy as xpath
 		 
-		 UserLogin.driver.findElement(By.xpath("//button[@href='#/branch/4']//following::button")).click();
+		 //UserLogin.driver.findElement(By.xpath("//button[@href='#/branch/2']//following::button")).click();
 			/* WebElement id = driver.findElement(By.xpath("//a[contains(@href,'#/branch/4')]"));
 			 String idValue=id.getText();
 			 System.out.println("The id is :"+idValue);
@@ -63,11 +64,12 @@ public class EditBranch {
 				
 	
 	}
-	@Test(description="Edit Branch Details with invalid branch name",dependsOnGroups= {"UserLogin.login"},enabled=true)
+	@Test(priority=7,description="Edit Branch Details with invalid branch name",dependsOnGroups= {"UserLogin.login"},enabled=true)
 	@Parameters({"shortbrName"})
 	public void editBranchInv(String shortBrName) throws InterruptedException {
 			 //Selecting the Branch info
 		Thread.sleep(2000);
+		UserLogin.driver.findElement(By.xpath("//*[@id=\"navbar-collapse\"]/ul/li[1]/a[2]/span[2]")).click();
 		UserLogin.entities.click();
 		String s= UserLogin.entities.getText();
 		System.out.println(s);
@@ -82,8 +84,9 @@ public class EditBranch {
 			 
 			 
 			//Edit with invalid branch name 
-		 UserLogin.driver.findElement(By.xpath("//button[@href='#/branch/3']//following::button")).click();
-			
+		 //UserLogin.driver.findElement(By.xpath("//button[@href='#/branch/3']//following::button")).click();
+		 UserLogin.driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[4]/table/tbody/tr[2]/td[4]/button[2]")).click();
+		 
 			 Thread.sleep(3000);
 			 UserLogin.driver.findElement(By.name("name")).clear();
 			 UserLogin.driver.findElement(By.name("name")).sendKeys(shortBrName);

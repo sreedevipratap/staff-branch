@@ -18,11 +18,13 @@ public class EditStaff {
 	public static String actual;
 	public static String title;
 
-@Test(description="Edit Staff",dependsOnGroups= {"UserLogin.login"},enabled=true)
+@Test(priority=15,description="Edit Staff",dependsOnGroups= {"UserLogin.login"},enabled=true)
 @Parameters({"staffName","index"})
-public void addStaff(String staffName,int index) throws Throwable {
+public void editStaff(String staffName,int index) throws Throwable {
 	
 		//Selecting the Staff info
+	    UserLogin.driver.findElement(By.xpath("//*[@id=\"navbar-collapse\"]/ul/li[1]/a[2]/span[2]")).click();
+	
 		UserLogin.entities.click();
 		String s= UserLogin.entities.getText();
 		System.out.println(s);
@@ -34,8 +36,9 @@ public void addStaff(String staffName,int index) throws Throwable {
 		expected = "Staffs";
 		Assert.assertEquals(title, expected);
 		 
-		//Add a new staff
+		//Edit a staff
 		UserLogin.driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[4]/table/tbody/tr[2]/td[4]/button[2]")).click();
+		                                        // /html/body/div[3]/div[1]/div/div[4]/table/tbody/tr[2]/td[4]/button[2]
 		Thread.sleep(3000);
 		title = UserLogin.driver.getTitle();
 		System.out.println("title of page is "+title);
@@ -48,6 +51,7 @@ public void addStaff(String staffName,int index) throws Throwable {
 		//sel.selectByVisibleText(brName);
 		//sel.selectByValue("number:21");
 		sel.selectByIndex(index);	
+		System.out.println("hereeeeeee");
 		UserLogin.driver.findElement(By.xpath("//button[@type='submit']")).click();
 		Thread.sleep(3000);	
 		

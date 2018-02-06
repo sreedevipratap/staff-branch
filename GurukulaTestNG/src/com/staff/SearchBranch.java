@@ -11,11 +11,13 @@ public class SearchBranch {
 	public static String actual;
 	public static String title;
 	
-	@Test(description="Search for a Branch",dependsOnGroups= {"UserLogin.login"},enabled=true)
+	@Test(priority=8,description="Search for a Branch",dependsOnGroups= {"UserLogin.login"},enabled=true)
 	@Parameters({"branchName"})
 	public void searchBranch(String brName) throws InterruptedException {
 		//Selecting the Branch info
 		Thread.sleep(3000);
+		UserLogin.driver.findElement(By.xpath("//*[@id=\"navbar-collapse\"]/ul/li[1]/a[2]/span[2]")).click();
+	
 		UserLogin.entities.click();
 		String s= UserLogin.entities.getText();
 		System.out.println(s);

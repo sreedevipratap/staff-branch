@@ -6,22 +6,268 @@
   <parameter name="url" value="http://127.0.0.1:8081"/>
   <test name="TestGurukula(failed)">
     <classes>
-      <class name="com.staff.DeleteBranch">
-        <parameter name="brName" value="Cochin"/>
+      <class name="com.staff.EditStaff">
+        <parameter name="code3" value="COK"/>
+        <parameter name="code2" value="LON"/>
         <parameter name="code" value="COK"/>
+        <parameter name="code1" value="DXB"/>
+        <parameter name="index3" value="3"/>
+        <parameter name="branchName" value="LN"/>
+        <parameter name="index" value="0"/>
+        <parameter name="index2" value="1"/>
+        <parameter name="shortbrName" value="Coc"/>
+        <parameter name="brName1" value="Dubai"/>
+        <parameter name="staffName1" value="devi"/>
+        <parameter name="brName2" value="London"/>
+        <parameter name="staffName2" value="Sreedevi"/>
+        <parameter name="index1" value="2"/>
+        <parameter name="staffName" value="sp"/>
+        <parameter name="brName3" value="Cochin"/>
+        <parameter name="staffName3" value="SP"/>
+        <parameter name="brName" value="Cochin"/>
         <methods>
-          <include name="delBranch"/>
+          <include name="editStaff" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.staff.DeleteBranch -->
-      <class name="com.staff.UserLogin">
-        <parameter name="brName" value="Cochin"/>
+      </class> <!-- com.staff.EditStaff -->
+      <class name="com.staff.AddNewStaff">
+        <parameter name="code3" value="COK"/>
+        <parameter name="code2" value="LON"/>
         <parameter name="code" value="COK"/>
+        <parameter name="code1" value="DXB"/>
+        <parameter name="index3" value="3"/>
+        <parameter name="branchName" value="LN"/>
+        <parameter name="index" value="0"/>
+        <parameter name="index2" value="1"/>
+        <parameter name="shortbrName" value="Coc"/>
+        <parameter name="brName1" value="Dubai"/>
+        <parameter name="staffName1" value="devi"/>
+        <parameter name="brName2" value="London"/>
+        <parameter name="staffName2" value="Sreedevi"/>
+        <parameter name="index1" value="2"/>
+        <parameter name="staffName" value="sp"/>
+        <parameter name="brName3" value="Cochin"/>
+        <parameter name="staffName3" value="SP"/>
+        <parameter name="brName" value="Cochin"/>
+        <methods>
+          <include name="addStaff3" invocation-numbers="0"/>
+          <include name="addStaff" invocation-numbers="0"/>
+          <include name="addStaff1" invocation-numbers="0"/>
+          <include name="addStaff2" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.staff.AddNewStaff -->
+      <class name="com.staff.AddNewBranch">
+        <parameter name="code3" value="COK"/>
+        <parameter name="code2" value="LON"/>
+        <parameter name="code" value="COK"/>
+        <parameter name="code1" value="DXB"/>
+        <parameter name="index3" value="3"/>
+        <parameter name="branchName" value="LN"/>
+        <parameter name="index" value="0"/>
+        <parameter name="index2" value="1"/>
+        <parameter name="shortbrName" value="Coc"/>
+        <parameter name="brName1" value="Dubai"/>
+        <parameter name="staffName1" value="devi"/>
+        <parameter name="brName2" value="London"/>
+        <parameter name="staffName2" value="Sreedevi"/>
+        <parameter name="index1" value="2"/>
+        <parameter name="staffName" value="sp"/>
+        <parameter name="brName3" value="Cochin"/>
+        <parameter name="staffName3" value="SP"/>
+        <parameter name="brName" value="Cochin"/>
+        <methods>
+          <include name="newBranch3" invocation-numbers="0"/>
+          <include name="newBranch" invocation-numbers="0"/>
+          <include name="newBranch4" invocation-numbers="0"/>
+          <include name="newBranch2" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.staff.AddNewBranch -->
+      <class name="com.staff.UserLogin">
+        <parameter name="code3" value="COK"/>
+        <parameter name="code2" value="LON"/>
+        <parameter name="code" value="COK"/>
+        <parameter name="code1" value="DXB"/>
+        <parameter name="index3" value="3"/>
+        <parameter name="branchName" value="LN"/>
+        <parameter name="index" value="0"/>
+        <parameter name="index2" value="1"/>
+        <parameter name="shortbrName" value="Coc"/>
+        <parameter name="brName1" value="Dubai"/>
+        <parameter name="staffName1" value="devi"/>
+        <parameter name="brName2" value="London"/>
+        <parameter name="staffName2" value="Sreedevi"/>
+        <parameter name="index1" value="2"/>
+        <parameter name="staffName" value="sp"/>
+        <parameter name="brName3" value="Cochin"/>
+        <parameter name="staffName3" value="SP"/>
+        <parameter name="brName" value="Cochin"/>
         <methods>
           <include name="login"/>
           <include name="openSession"/>
           <include name="closeSession"/>
         </methods>
       </class> <!-- com.staff.UserLogin -->
+      <class name="com.staff.ViewBranch">
+        <parameter name="code3" value="COK"/>
+        <parameter name="code2" value="LON"/>
+        <parameter name="code" value="COK"/>
+        <parameter name="code1" value="DXB"/>
+        <parameter name="index3" value="3"/>
+        <parameter name="branchName" value="LN"/>
+        <parameter name="index" value="0"/>
+        <parameter name="index2" value="1"/>
+        <parameter name="shortbrName" value="Coc"/>
+        <parameter name="brName1" value="Dubai"/>
+        <parameter name="staffName1" value="devi"/>
+        <parameter name="brName2" value="London"/>
+        <parameter name="staffName2" value="Sreedevi"/>
+        <parameter name="index1" value="2"/>
+        <parameter name="staffName" value="sp"/>
+        <parameter name="brName3" value="Cochin"/>
+        <parameter name="staffName3" value="SP"/>
+        <parameter name="brName" value="Cochin"/>
+        <methods>
+          <include name="viewBranch"/>
+        </methods>
+      </class> <!-- com.staff.ViewBranch -->
+      <class name="com.staff.EditBranch">
+        <parameter name="code3" value="COK"/>
+        <parameter name="code2" value="LON"/>
+        <parameter name="code" value="COK"/>
+        <parameter name="code1" value="DXB"/>
+        <parameter name="index3" value="3"/>
+        <parameter name="branchName" value="LN"/>
+        <parameter name="index" value="0"/>
+        <parameter name="index2" value="1"/>
+        <parameter name="shortbrName" value="Coc"/>
+        <parameter name="brName1" value="Dubai"/>
+        <parameter name="staffName1" value="devi"/>
+        <parameter name="brName2" value="London"/>
+        <parameter name="staffName2" value="Sreedevi"/>
+        <parameter name="index1" value="2"/>
+        <parameter name="staffName" value="sp"/>
+        <parameter name="brName3" value="Cochin"/>
+        <parameter name="staffName3" value="SP"/>
+        <parameter name="brName" value="Cochin"/>
+        <methods>
+          <include name="editBranch" invocation-numbers="0"/>
+          <include name="editBranchInv" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.staff.EditBranch -->
+      <class name="com.staff.SearchStaff">
+        <parameter name="code3" value="COK"/>
+        <parameter name="code2" value="LON"/>
+        <parameter name="code" value="COK"/>
+        <parameter name="code1" value="DXB"/>
+        <parameter name="index3" value="3"/>
+        <parameter name="branchName" value="LN"/>
+        <parameter name="index" value="0"/>
+        <parameter name="index2" value="1"/>
+        <parameter name="shortbrName" value="Coc"/>
+        <parameter name="brName1" value="Dubai"/>
+        <parameter name="staffName1" value="devi"/>
+        <parameter name="brName2" value="London"/>
+        <parameter name="staffName2" value="Sreedevi"/>
+        <parameter name="index1" value="2"/>
+        <parameter name="staffName" value="sp"/>
+        <parameter name="brName3" value="Cochin"/>
+        <parameter name="staffName3" value="SP"/>
+        <parameter name="brName" value="Cochin"/>
+        <methods>
+          <include name="searchStaff" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.staff.SearchStaff -->
+      <class name="com.staff.DeleteBranch">
+        <parameter name="code3" value="COK"/>
+        <parameter name="code2" value="LON"/>
+        <parameter name="code" value="COK"/>
+        <parameter name="code1" value="DXB"/>
+        <parameter name="index3" value="3"/>
+        <parameter name="branchName" value="LN"/>
+        <parameter name="index" value="0"/>
+        <parameter name="index2" value="1"/>
+        <parameter name="shortbrName" value="Coc"/>
+        <parameter name="brName1" value="Dubai"/>
+        <parameter name="staffName1" value="devi"/>
+        <parameter name="brName2" value="London"/>
+        <parameter name="staffName2" value="Sreedevi"/>
+        <parameter name="index1" value="2"/>
+        <parameter name="staffName" value="sp"/>
+        <parameter name="brName3" value="Cochin"/>
+        <parameter name="staffName3" value="SP"/>
+        <parameter name="brName" value="Cochin"/>
+        <methods>
+          <include name="delBranch"/>
+        </methods>
+      </class> <!-- com.staff.DeleteBranch -->
+      <class name="com.staff.ViewStaff">
+        <parameter name="code3" value="COK"/>
+        <parameter name="code2" value="LON"/>
+        <parameter name="code" value="COK"/>
+        <parameter name="code1" value="DXB"/>
+        <parameter name="index3" value="3"/>
+        <parameter name="branchName" value="LN"/>
+        <parameter name="index" value="0"/>
+        <parameter name="index2" value="1"/>
+        <parameter name="shortbrName" value="Coc"/>
+        <parameter name="brName1" value="Dubai"/>
+        <parameter name="staffName1" value="devi"/>
+        <parameter name="brName2" value="London"/>
+        <parameter name="staffName2" value="Sreedevi"/>
+        <parameter name="index1" value="2"/>
+        <parameter name="staffName" value="sp"/>
+        <parameter name="brName3" value="Cochin"/>
+        <parameter name="staffName3" value="SP"/>
+        <parameter name="brName" value="Cochin"/>
+        <methods>
+          <include name="searchStaff"/>
+        </methods>
+      </class> <!-- com.staff.ViewStaff -->
+      <class name="com.staff.DeleteStaff">
+        <parameter name="code3" value="COK"/>
+        <parameter name="code2" value="LON"/>
+        <parameter name="code" value="COK"/>
+        <parameter name="code1" value="DXB"/>
+        <parameter name="index3" value="3"/>
+        <parameter name="branchName" value="LN"/>
+        <parameter name="index" value="0"/>
+        <parameter name="index2" value="1"/>
+        <parameter name="shortbrName" value="Coc"/>
+        <parameter name="brName1" value="Dubai"/>
+        <parameter name="staffName1" value="devi"/>
+        <parameter name="brName2" value="London"/>
+        <parameter name="staffName2" value="Sreedevi"/>
+        <parameter name="index1" value="2"/>
+        <parameter name="staffName" value="sp"/>
+        <parameter name="brName3" value="Cochin"/>
+        <parameter name="staffName3" value="SP"/>
+        <parameter name="brName" value="Cochin"/>
+        <methods>
+          <include name="delStaff"/>
+        </methods>
+      </class> <!-- com.staff.DeleteStaff -->
+      <class name="com.staff.SearchBranch">
+        <parameter name="code3" value="COK"/>
+        <parameter name="code2" value="LON"/>
+        <parameter name="code" value="COK"/>
+        <parameter name="code1" value="DXB"/>
+        <parameter name="index3" value="3"/>
+        <parameter name="branchName" value="LN"/>
+        <parameter name="index" value="0"/>
+        <parameter name="index2" value="1"/>
+        <parameter name="shortbrName" value="Coc"/>
+        <parameter name="brName1" value="Dubai"/>
+        <parameter name="staffName1" value="devi"/>
+        <parameter name="brName2" value="London"/>
+        <parameter name="staffName2" value="Sreedevi"/>
+        <parameter name="index1" value="2"/>
+        <parameter name="staffName" value="sp"/>
+        <parameter name="brName3" value="Cochin"/>
+        <parameter name="staffName3" value="SP"/>
+        <parameter name="brName" value="Cochin"/>
+        <methods>
+          <include name="searchBranch" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.staff.SearchBranch -->
     </classes>
   </test> <!-- TestGurukula(failed) -->
   <test name="NewUser(failed)">
@@ -41,4 +287,16 @@
       </class> <!-- com.staff.NewUserRegistration -->
     </classes>
   </test> <!-- NewUser(failed) -->
+  <test name="LoginLogout(failed)">
+    <classes>
+      <class name="com.staff.UserLogout">
+        <methods>
+          <include name="logout"/>
+          <include name="openSession"/>
+          <include name="login" invocation-numbers="0"/>
+          <include name="closeSession"/>
+        </methods>
+      </class> <!-- com.staff.UserLogout -->
+    </classes>
+  </test> <!-- LoginLogout(failed) -->
 </suite> <!-- Failed suite [Suite] -->

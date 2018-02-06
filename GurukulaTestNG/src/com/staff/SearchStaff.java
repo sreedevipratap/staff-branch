@@ -23,11 +23,13 @@ public static String expected;
 public static String actual;
 public static String title;
 
-@Test(description="Search Staff",dependsOnGroups= {"UserLogin.login"},enabled=true)
+@Test(priority=16,description="Search Staff",dependsOnGroups= {"UserLogin.login"},enabled=true)
 @Parameters({"staffName"})
 	public void searchStaff(String staffName) throws InterruptedException {
 		
 		//Selecting the Staff info
+		UserLogin.driver.findElement(By.xpath("//*[@id=\"navbar-collapse\"]/ul/li[1]/a[2]/span[2]")).click();
+	
 		Thread.sleep(3000);
 		UserLogin.entities.click();
 		String s= UserLogin.entities.getText();

@@ -18,11 +18,13 @@ public class DeleteStaff {
 	public static String actual;
 	public static String title;
 
-@Test(description="Delete Staff",dependsOnGroups= {"UserLogin.login"},enabled=true)
+@Test(priority=17,description="Delete Staff",dependsOnGroups= {"UserLogin.login"},enabled=true)
 
 public void delStaff() throws Throwable {
 	
 		//Selecting the Staff info
+	    UserLogin.driver.findElement(By.xpath("//*[@id=\"navbar-collapse\"]/ul/li[1]/a[2]/span[2]")).click();
+	
 		UserLogin.entities.click();
 		String s= UserLogin.entities.getText();
 		System.out.println(s);
@@ -35,11 +37,11 @@ public void delStaff() throws Throwable {
 		Assert.assertEquals(title, expected);
 		 
 		//Delete a staff
-		UserLogin.driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[4]/table/tbody/tr[6]/td[4]/button[3]")).click();
+		UserLogin.driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[4]/table/tbody/tr[3]/td[4]/button[3]")).click();
 		Thread.sleep(3000);
 		title = UserLogin.driver.getTitle();
 		System.out.println("title of page is "+title);
-		UserLogin.driver.findElement(By.xpath("//*[@id=\"deleteStaffConfirmation\"]/div/div/form/div[3]/button[2]")).click();
+		UserLogin.driver.findElement(By.xpath("//*[@id=\"deleteStaffConfirmation\"]/div/div/form/div[3]/button[2]/span[2]")).click();
 		
 		//Assert.assertTrue(UserLogin.driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[4]/table/tbody/tr/td[2]")).isDisplayed());
 		System.out.println(" Staff deleted");
