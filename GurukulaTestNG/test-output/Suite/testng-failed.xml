@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="uname" value="admin"/>
+  <parameter name="pwd" value="admin"/>
+  <parameter name="url" value="http://127.0.0.1:8081"/>
+  <test name="TestGurukula(failed)">
+    <classes>
+      <class name="com.staff.DeleteBranch">
+        <parameter name="brName" value="Cochin"/>
+        <parameter name="code" value="COK"/>
+        <methods>
+          <include name="delBranch"/>
+        </methods>
+      </class> <!-- com.staff.DeleteBranch -->
+      <class name="com.staff.UserLogin">
+        <parameter name="brName" value="Cochin"/>
+        <parameter name="code" value="COK"/>
+        <methods>
+          <include name="login"/>
+          <include name="openSession"/>
+          <include name="closeSession"/>
+        </methods>
+      </class> <!-- com.staff.UserLogin -->
+    </classes>
+  </test> <!-- TestGurukula(failed) -->
+  <test name="NewUser(failed)">
+    <classes>
+      <class name="com.staff.NewUserRegistration">
+        <parameter name="pwd1" value="sreed"/>
+        <parameter name="loginId" value="sree"/>
+        <parameter name="emailId1" value="sreeom"/>
+        <parameter name="emailId" value="sreedevi_pratap@yahoo.com"/>
+        <parameter name="pwd" value="sreed"/>
+        <parameter name="loginId1" value=" "/>
+        <methods>
+          <include name="newUser" invocation-numbers="0"/>
+          <include name="openSession"/>
+          <include name="closeSession"/>
+        </methods>
+      </class> <!-- com.staff.NewUserRegistration -->
+    </classes>
+  </test> <!-- NewUser(failed) -->
+</suite> <!-- Failed suite [Suite] -->
