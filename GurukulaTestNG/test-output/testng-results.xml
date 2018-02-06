@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="21" passed="21">
+<testng-results skipped="0" failed="0" ignored="0" total="22" passed="22">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="153356" started-at="2018-02-06T10:32:40Z" finished-at="2018-02-06T10:35:13Z">
+  <suite name="Suite" duration-ms="164158" started-at="2018-02-06T14:54:48Z" finished-at="2018-02-06T14:57:32Z">
     <groups>
       <group name="UserLogin.login">
         <method signature="UserLogin.login(java.lang.String, java.lang.String)[pri:0, instance:com.staff.UserLogin@28d25987]" name="login" class="com.staff.UserLogin"/>
-        <method signature="UserLogout.login(java.lang.String, java.lang.String)[pri:0, instance:com.staff.UserLogout@14bf9759]" name="login" class="com.staff.UserLogout"/>
+        <method signature="UserLogout.login(java.lang.String, java.lang.String)[pri:1, instance:com.staff.UserLogout@14bf9759]" name="login" class="com.staff.UserLogout"/>
       </group> <!-- UserLogin.login -->
     </groups>
-    <test name="TestGurukula" duration-ms="130620" started-at="2018-02-06T10:32:40Z" finished-at="2018-02-06T10:34:50Z">
+    <test name="TestGurukula" duration-ms="141825" started-at="2018-02-06T14:54:48Z" finished-at="2018-02-06T14:57:10Z">
       <class name="com.staff.AddNewStaff">
-        <test-method status="PASS" signature="addStaff(java.lang.String, int)[pri:10, instance:com.staff.AddNewStaff@5e5792a0]" name="addStaff" duration-ms="9583" depends-on-groups="UserLogin.login" started-at="2018-02-06T11:33:44Z" description="Add a New Staff" finished-at="2018-02-06T11:33:53Z">
+        <test-method status="PASS" signature="addStaff(java.lang.String, int)[pri:10, instance:com.staff.AddNewStaff@5e5792a0]" name="addStaff" duration-ms="8763" depends-on-groups="UserLogin.login" started-at="2018-02-06T15:56:06Z" description="Add a New Staff" finished-at="2018-02-06T15:56:14Z">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addStaff -->
-        <test-method status="PASS" signature="addStaff1(java.lang.String, int)[pri:11, instance:com.staff.AddNewStaff@5e5792a0]" name="addStaff1" duration-ms="9351" depends-on-groups="UserLogin.login" started-at="2018-02-06T11:33:53Z" description="Add a New Staff" finished-at="2018-02-06T11:34:03Z">
+        <test-method status="PASS" signature="addStaff1(java.lang.String, int)[pri:11, instance:com.staff.AddNewStaff@5e5792a0]" name="addStaff1" duration-ms="8979" depends-on-groups="UserLogin.login" started-at="2018-02-06T15:56:14Z" description="Add a New Staff" finished-at="2018-02-06T15:56:23Z">
           <params>
             <param index="0">
               <value>
@@ -43,7 +43,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addStaff1 -->
-        <test-method status="PASS" signature="addStaff2(java.lang.String, int)[pri:12, instance:com.staff.AddNewStaff@5e5792a0]" name="addStaff2" duration-ms="9684" depends-on-groups="UserLogin.login" started-at="2018-02-06T11:34:03Z" description="Add a New Staff" finished-at="2018-02-06T11:34:12Z">
+        <test-method status="PASS" signature="addStaff2(java.lang.String, int)[pri:12, instance:com.staff.AddNewStaff@5e5792a0]" name="addStaff2" duration-ms="8796" depends-on-groups="UserLogin.login" started-at="2018-02-06T15:56:23Z" description="Add a New Staff" finished-at="2018-02-06T15:56:32Z">
           <params>
             <param index="0">
               <value>
@@ -59,7 +59,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addStaff2 -->
-        <test-method status="PASS" signature="addStaff3(java.lang.String, int)[pri:13, instance:com.staff.AddNewStaff@5e5792a0]" name="addStaff3" duration-ms="9279" depends-on-groups="UserLogin.login" started-at="2018-02-06T11:34:12Z" description="Add a New Staff" finished-at="2018-02-06T11:34:22Z">
+        <test-method status="PASS" signature="addStaff3(java.lang.String, int)[pri:13, instance:com.staff.AddNewStaff@5e5792a0]" name="addStaff3" duration-ms="8698" depends-on-groups="UserLogin.login" started-at="2018-02-06T15:56:32Z" description="Add a New Staff" finished-at="2018-02-06T15:56:41Z">
           <params>
             <param index="0">
               <value>
@@ -77,13 +77,13 @@
         </test-method> <!-- addStaff3 -->
       </class> <!-- com.staff.AddNewStaff -->
       <class name="com.staff.ViewStaff">
-        <test-method status="PASS" signature="searchStaff()[pri:14, instance:com.staff.ViewStaff@26653222]" name="searchStaff" duration-ms="5886" depends-on-groups="UserLogin.login" started-at="2018-02-06T11:34:22Z" description="View Staff" finished-at="2018-02-06T11:34:27Z">
+        <test-method status="PASS" signature="searchStaff()[pri:14, instance:com.staff.ViewStaff@26653222]" name="searchStaff" duration-ms="5440" depends-on-groups="UserLogin.login" started-at="2018-02-06T15:56:41Z" description="View Staff" finished-at="2018-02-06T15:56:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchStaff -->
       </class> <!-- com.staff.ViewStaff -->
       <class name="com.staff.EditBranch">
-        <test-method status="PASS" signature="editBranch(java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:com.staff.EditBranch@61832929]" name="editBranch" duration-ms="4710" depends-on-groups="UserLogin.login" started-at="2018-02-06T11:33:11Z" description="Edit Branch Details" finished-at="2018-02-06T11:33:16Z">
+        <test-method status="PASS" signature="editBranch(java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:com.staff.EditBranch@61832929]" name="editBranch" duration-ms="4011" depends-on-groups="UserLogin.login" started-at="2018-02-06T15:55:34Z" description="Edit Branch Details" finished-at="2018-02-06T15:55:38Z">
           <params>
             <param index="0">
               <value>
@@ -104,7 +104,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editBranch -->
-        <test-method status="PASS" signature="editBranchInv(java.lang.String)[pri:7, instance:com.staff.EditBranch@61832929]" name="editBranchInv" duration-ms="6136" depends-on-groups="UserLogin.login" started-at="2018-02-06T11:33:16Z" description="Edit Branch Details with invalid branch name" finished-at="2018-02-06T11:33:22Z">
+        <test-method status="PASS" signature="editBranchInv(java.lang.String)[pri:7, instance:com.staff.EditBranch@61832929]" name="editBranchInv" duration-ms="6146" depends-on-groups="UserLogin.login" started-at="2018-02-06T15:55:38Z" description="Edit Branch Details with invalid branch name" finished-at="2018-02-06T15:55:45Z">
           <params>
             <param index="0">
               <value>
@@ -117,7 +117,7 @@
         </test-method> <!-- editBranchInv -->
       </class> <!-- com.staff.EditBranch -->
       <class name="com.staff.EditStaff">
-        <test-method status="PASS" signature="editStaff(java.lang.String, int)[pri:15, instance:com.staff.EditStaff@3532ec19]" name="editStaff" duration-ms="9558" depends-on-groups="UserLogin.login" started-at="2018-02-06T11:34:27Z" description="Edit Staff" finished-at="2018-02-06T11:34:37Z">
+        <test-method status="PASS" signature="editStaff(java.lang.String, int)[pri:15, instance:com.staff.EditStaff@3532ec19]" name="editStaff" duration-ms="8977" depends-on-groups="UserLogin.login" started-at="2018-02-06T15:56:46Z" description="Edit Staff" finished-at="2018-02-06T15:56:55Z">
           <params>
             <param index="0">
               <value>
@@ -135,7 +135,7 @@
         </test-method> <!-- editStaff -->
       </class> <!-- com.staff.EditStaff -->
       <class name="com.staff.SearchStaff">
-        <test-method status="PASS" signature="searchStaff(java.lang.String)[pri:16, instance:com.staff.SearchStaff@68c4039c]" name="searchStaff" duration-ms="9223" depends-on-groups="UserLogin.login" started-at="2018-02-06T11:34:37Z" description="Search Staff" finished-at="2018-02-06T11:34:46Z">
+        <test-method status="PASS" signature="searchStaff(java.lang.String)[pri:16, instance:com.staff.SearchStaff@68c4039c]" name="searchStaff" duration-ms="8777" depends-on-groups="UserLogin.login" started-at="2018-02-06T15:56:55Z" description="Search Staff" finished-at="2018-02-06T15:57:04Z">
           <params>
             <param index="0">
               <value>
@@ -148,7 +148,7 @@
         </test-method> <!-- searchStaff -->
       </class> <!-- com.staff.SearchStaff -->
       <class name="com.staff.SearchBranch">
-        <test-method status="PASS" signature="searchBranch(java.lang.String)[pri:8, instance:com.staff.SearchBranch@29774679]" name="searchBranch" duration-ms="10004" depends-on-groups="UserLogin.login" started-at="2018-02-06T11:33:22Z" description="Search for a Branch" finished-at="2018-02-06T11:33:32Z">
+        <test-method status="PASS" signature="searchBranch(java.lang.String)[pri:8, instance:com.staff.SearchBranch@29774679]" name="searchBranch" duration-ms="9522" depends-on-groups="UserLogin.login" started-at="2018-02-06T15:55:45Z" description="Search for a Branch" finished-at="2018-02-06T15:55:54Z">
           <params>
             <param index="0">
               <value>
@@ -161,13 +161,13 @@
         </test-method> <!-- searchBranch -->
       </class> <!-- com.staff.SearchBranch -->
       <class name="com.staff.ViewBranch">
-        <test-method status="PASS" signature="viewBranch()[pri:5, instance:com.staff.ViewBranch@5b275dab]" name="viewBranch" duration-ms="6134" depends-on-groups="UserLogin.login" started-at="2018-02-06T11:33:05Z" description="View details of a Branch" finished-at="2018-02-06T11:33:11Z">
+        <test-method status="PASS" signature="viewBranch()[pri:5, instance:com.staff.ViewBranch@5b275dab]" name="viewBranch" duration-ms="5514" depends-on-groups="UserLogin.login" started-at="2018-02-06T15:55:29Z" description="View details of a Branch" finished-at="2018-02-06T15:55:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewBranch -->
       </class> <!-- com.staff.ViewBranch -->
       <class name="com.staff.AddNewBranch">
-        <test-method status="PASS" signature="newBranch(java.lang.String, java.lang.String)[pri:1, instance:com.staff.AddNewBranch@4501b7af]" name="newBranch" duration-ms="1684" depends-on-groups="UserLogin.login" started-at="2018-02-06T11:32:48Z" description="Create a New Branch" finished-at="2018-02-06T11:32:50Z">
+        <test-method status="PASS" signature="newBranch(java.lang.String, java.lang.String)[pri:1, instance:com.staff.AddNewBranch@4501b7af]" name="newBranch" duration-ms="5395" depends-on-groups="UserLogin.login" started-at="2018-02-06T15:54:57Z" description="Create a New Branch" finished-at="2018-02-06T15:55:02Z">
           <params>
             <param index="0">
               <value>
@@ -183,7 +183,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newBranch -->
-        <test-method status="PASS" signature="newBranch2(java.lang.String, java.lang.String)[pri:2, instance:com.staff.AddNewBranch@4501b7af]" name="newBranch2" duration-ms="4966" depends-on-groups="UserLogin.login" started-at="2018-02-06T11:32:50Z" description="Create a New Branch" finished-at="2018-02-06T11:32:55Z">
+        <test-method status="PASS" signature="newBranch2(java.lang.String, java.lang.String)[pri:2, instance:com.staff.AddNewBranch@4501b7af]" name="newBranch2" duration-ms="9022" depends-on-groups="UserLogin.login" started-at="2018-02-06T15:55:02Z" description="Create a New Branch" finished-at="2018-02-06T15:55:11Z">
           <params>
             <param index="0">
               <value>
@@ -199,7 +199,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newBranch2 -->
-        <test-method status="PASS" signature="newBranch3(java.lang.String, java.lang.String)[pri:3, instance:com.staff.AddNewBranch@4501b7af]" name="newBranch3" duration-ms="4883" depends-on-groups="UserLogin.login" started-at="2018-02-06T11:32:55Z" description="Create a New Branch" finished-at="2018-02-06T11:33:00Z">
+        <test-method status="PASS" signature="newBranch3(java.lang.String, java.lang.String)[pri:3, instance:com.staff.AddNewBranch@4501b7af]" name="newBranch3" duration-ms="8963" depends-on-groups="UserLogin.login" started-at="2018-02-06T15:55:11Z" description="Create a New Branch" finished-at="2018-02-06T15:55:20Z">
           <params>
             <param index="0">
               <value>
@@ -215,7 +215,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newBranch3 -->
-        <test-method status="PASS" signature="newBranch4(java.lang.String, java.lang.String)[pri:4, instance:com.staff.AddNewBranch@4501b7af]" name="newBranch4" duration-ms="4865" depends-on-groups="UserLogin.login" started-at="2018-02-06T11:33:00Z" description="Create a New Branch" finished-at="2018-02-06T11:33:05Z">
+        <test-method status="PASS" signature="newBranch4(java.lang.String, java.lang.String)[pri:4, instance:com.staff.AddNewBranch@4501b7af]" name="newBranch4" duration-ms="8865" depends-on-groups="UserLogin.login" started-at="2018-02-06T15:55:20Z" description="Create a New Branch" finished-at="2018-02-06T15:55:29Z">
           <params>
             <param index="0">
               <value>
@@ -233,19 +233,19 @@
         </test-method> <!-- newBranch4 -->
       </class> <!-- com.staff.AddNewBranch -->
       <class name="com.staff.DeleteStaff">
-        <test-method status="PASS" signature="delStaff()[pri:17, instance:com.staff.DeleteStaff@ae45eb6]" name="delStaff" duration-ms="3839" depends-on-groups="UserLogin.login" started-at="2018-02-06T11:34:46Z" description="Delete Staff" finished-at="2018-02-06T11:34:50Z">
+        <test-method status="PASS" signature="delStaff()[pri:17, instance:com.staff.DeleteStaff@ae45eb6]" name="delStaff" duration-ms="3489" depends-on-groups="UserLogin.login" started-at="2018-02-06T15:57:04Z" description="Delete Staff" finished-at="2018-02-06T15:57:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- delStaff -->
       </class> <!-- com.staff.DeleteStaff -->
       <class name="com.staff.DeleteBranch">
-        <test-method status="PASS" signature="delBranch()[pri:9, instance:com.staff.DeleteBranch@3ffc5af1]" name="delBranch" duration-ms="11823" depends-on-groups="UserLogin.login" started-at="2018-02-06T11:33:32Z" description="Delete a Branch" finished-at="2018-02-06T11:33:44Z">
+        <test-method status="PASS" signature="delBranch()[pri:9, instance:com.staff.DeleteBranch@3ffc5af1]" name="delBranch" duration-ms="11559" depends-on-groups="UserLogin.login" started-at="2018-02-06T15:55:54Z" description="Delete a Branch" finished-at="2018-02-06T15:56:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- delBranch -->
       </class> <!-- com.staff.DeleteBranch -->
       <class name="com.staff.UserLogin">
-        <test-method status="PASS" signature="openSession(java.lang.String)[pri:0, instance:com.staff.UserLogin@28d25987]" name="openSession" is-config="true" duration-ms="4912" started-at="2018-02-06T11:32:40Z" finished-at="2018-02-06T11:32:45Z">
+        <test-method status="PASS" signature="openSession(java.lang.String)[pri:0, instance:com.staff.UserLogin@28d25987]" name="openSession" is-config="true" duration-ms="4735" started-at="2018-02-06T15:54:48Z" finished-at="2018-02-06T15:54:53Z">
           <params>
             <param index="0">
               <value>
@@ -256,7 +256,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSession -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.staff.UserLogin@28d25987]" name="login" duration-ms="3901" started-at="2018-02-06T11:32:45Z" description="Login to Gurukula" finished-at="2018-02-06T11:32:48Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.staff.UserLogin@28d25987]" name="login" duration-ms="3998" started-at="2018-02-06T15:54:53Z" description="Login to Gurukula" finished-at="2018-02-06T15:54:57Z">
           <params>
             <param index="0">
               <value>
@@ -272,15 +272,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.staff.UserLogin@28d25987]" name="closeSession" is-config="true" duration-ms="116" started-at="2018-02-06T11:34:50Z" finished-at="2018-02-06T11:34:50Z">
+        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.staff.UserLogin@28d25987]" name="closeSession" is-config="true" duration-ms="2117" started-at="2018-02-06T15:57:08Z" finished-at="2018-02-06T15:57:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSession -->
       </class> <!-- com.staff.UserLogin -->
     </test> <!-- TestGurukula -->
-    <test name="NewUser" duration-ms="13825" started-at="2018-02-06T10:34:50Z" finished-at="2018-02-06T10:35:04Z">
+    <test name="NewUser" duration-ms="11447" started-at="2018-02-06T14:57:10Z" finished-at="2018-02-06T14:57:21Z">
       <class name="com.staff.NewUserRegistration">
-        <test-method status="PASS" signature="openSession(java.lang.String)[pri:0, instance:com.staff.NewUserRegistration@f6c48ac]" name="openSession" is-config="true" duration-ms="4046" started-at="2018-02-06T11:34:50Z" finished-at="2018-02-06T11:34:54Z">
+        <test-method status="PASS" signature="openSession(java.lang.String)[pri:0, instance:com.staff.NewUserRegistration@f6c48ac]" name="openSession" is-config="true" duration-ms="4102" started-at="2018-02-06T15:57:10Z" finished-at="2018-02-06T15:57:14Z">
           <params>
             <param index="0">
               <value>
@@ -291,7 +291,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSession -->
-        <test-method status="PASS" signature="newUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.staff.NewUserRegistration@f6c48ac]" name="newUser" duration-ms="7660" started-at="2018-02-06T11:34:54Z" description="Register a new user" finished-at="2018-02-06T11:35:02Z">
+        <test-method status="PASS" signature="newUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.staff.NewUserRegistration@f6c48ac]" name="newUser" duration-ms="7202" started-at="2018-02-06T15:57:14Z" description="Register a new user" finished-at="2018-02-06T15:57:21Z">
           <params>
             <param index="0">
               <value>
@@ -317,15 +317,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newUser -->
-        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.staff.NewUserRegistration@f6c48ac]" name="closeSession" is-config="true" duration-ms="2114" started-at="2018-02-06T11:35:02Z" finished-at="2018-02-06T11:35:04Z">
+        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.staff.NewUserRegistration@f6c48ac]" name="closeSession" is-config="true" duration-ms="137" started-at="2018-02-06T15:57:21Z" finished-at="2018-02-06T15:57:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSession -->
       </class> <!-- com.staff.NewUserRegistration -->
     </test> <!-- NewUser -->
-    <test name="LoginLogout" duration-ms="8848" started-at="2018-02-06T10:35:04Z" finished-at="2018-02-06T10:35:13Z">
+    <test name="LoginLogout" duration-ms="10823" started-at="2018-02-06T14:57:21Z" finished-at="2018-02-06T14:57:32Z">
       <class name="com.staff.UserLogout">
-        <test-method status="PASS" signature="openSession(java.lang.String)[pri:0, instance:com.staff.UserLogout@14bf9759]" name="openSession" is-config="true" duration-ms="4171" started-at="2018-02-06T11:35:04Z" finished-at="2018-02-06T11:35:08Z">
+        <test-method status="PASS" signature="openSession(java.lang.String)[pri:0, instance:com.staff.UserLogout@14bf9759]" name="openSession" is-config="true" duration-ms="3894" started-at="2018-02-06T15:57:21Z" finished-at="2018-02-06T15:57:25Z">
           <params>
             <param index="0">
               <value>
@@ -336,7 +336,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSession -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.staff.UserLogout@14bf9759]" name="login" duration-ms="4262" started-at="2018-02-06T11:35:08Z" description="Login to Gurukula" finished-at="2018-02-06T11:35:13Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:1, instance:com.staff.UserLogout@14bf9759]" name="login" duration-ms="3725" started-at="2018-02-06T15:57:25Z" description="Login to Gurukula" finished-at="2018-02-06T15:57:29Z">
           <params>
             <param index="0">
               <value>
@@ -352,11 +352,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:com.staff.UserLogout@14bf9759]" name="logout" duration-ms="337" started-at="2018-02-06T11:35:13Z" finished-at="2018-02-06T11:35:13Z">
+        <test-method status="PASS" signature="settings()[pri:2, instance:com.staff.UserLogout@14bf9759]" name="settings" duration-ms="2891" started-at="2018-02-06T15:57:29Z" finished-at="2018-02-06T15:57:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settings -->
+        <test-method status="PASS" signature="logout()[pri:3, instance:com.staff.UserLogout@14bf9759]" name="logout" duration-ms="204" started-at="2018-02-06T15:57:32Z" finished-at="2018-02-06T15:57:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.staff.UserLogout@14bf9759]" name="closeSession" is-config="true" duration-ms="74" started-at="2018-02-06T11:35:13Z" finished-at="2018-02-06T11:35:13Z">
+        <test-method status="PASS" signature="closeSession()[pri:0, instance:com.staff.UserLogout@14bf9759]" name="closeSession" is-config="true" duration-ms="105" started-at="2018-02-06T15:57:32Z" finished-at="2018-02-06T15:57:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSession -->

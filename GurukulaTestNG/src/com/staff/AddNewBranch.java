@@ -16,7 +16,7 @@ public class AddNewBranch {
 
 	@Test(priority=1,description="Create a New Branch",dependsOnGroups= {"UserLogin.login"},enabled=true)
 	@Parameters({"brName","code"})
-	public void newBranch(String brName, String code) {
+	public void newBranch(String brName, String code) throws InterruptedException {
 			
 		   //Selecting the Branch info
 		    
@@ -40,7 +40,9 @@ public class AddNewBranch {
 			 UserLogin.driver.findElement(By.name("name")).sendKeys("Netherlands");
 			 UserLogin.driver.findElement(By.name("name")).clear();
 			 UserLogin.driver.findElement(By.name("name")).sendKeys(brName);
+			 Thread.sleep(2000);
 			 UserLogin.driver.findElement(By.name("code")).sendKeys(code);
+			 Thread.sleep(2000);
 			 UserLogin.driver.findElement(By.cssSelector("button[type=submit]")).click();
 			 
 			 Assert.assertTrue(UserLogin.driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[4]/table/tbody/tr/td[4]/button[1]/span[2]")).isDisplayed());
@@ -74,7 +76,9 @@ public class AddNewBranch {
 			 //UserLogin.driver.findElement(By.name("name")).sendKeys("Netherlands");
 			 //UserLogin.driver.findElement(By.name("name")).clear();
 			 UserLogin.driver.findElement(By.name("name")).sendKeys(brName);
+			 Thread.sleep(2000);
 			 UserLogin.driver.findElement(By.name("code")).sendKeys(code);
+			 Thread.sleep(2000);
 			 UserLogin.driver.findElement(By.cssSelector("button[type=submit]")).click();
 			 
 			 Assert.assertTrue(UserLogin.driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[4]/table/tbody/tr/td[4]/button[1]/span[2]")).isDisplayed());
@@ -108,7 +112,9 @@ public class AddNewBranch {
 			// UserLogin.driver.findElement(By.name("name")).sendKeys("Netherlands");
 			 //UserLogin.driver.findElement(By.name("name")).clear();
 			 UserLogin.driver.findElement(By.name("name")).sendKeys(brName);
+			 Thread.sleep(2000);
 			 UserLogin.driver.findElement(By.name("code")).sendKeys(code);
+			 Thread.sleep(2000);
 			 UserLogin.driver.findElement(By.cssSelector("button[type=submit]")).click();
 			 
 			 Assert.assertTrue(UserLogin.driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[4]/table/tbody/tr/td[4]/button[1]/span[2]")).isDisplayed());
@@ -142,7 +148,9 @@ public class AddNewBranch {
 			 //UserLogin.driver.findElement(By.name("name")).sendKeys("Netherlands");
 			 //UserLogin.driver.findElement(By.name("name")).clear();
 			 UserLogin.driver.findElement(By.name("name")).sendKeys(brName);
+			 Thread.sleep(2000);
 			 UserLogin.driver.findElement(By.name("code")).sendKeys(code);
+			 Thread.sleep(2000);
 			 UserLogin.driver.findElement(By.cssSelector("button[type=submit]")).click();
 			 
 			 Assert.assertTrue(UserLogin.driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[4]/table/tbody/tr/td[4]/button[1]/span[2]")).isDisplayed());

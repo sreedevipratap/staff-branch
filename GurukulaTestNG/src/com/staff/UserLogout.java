@@ -36,7 +36,7 @@ public void openSession(String url)
 		System.out.println("=======Browser started=========");
 }*/
 
-@Test(description="Login to Gurukula",groups= {"UserLogin.login"})
+@Test(priority=1,description="Login to Gurukula",groups= {"UserLogin.login"})
 @Parameters({"uname","pwd"})
 public void login(String uname, String pwd) throws InterruptedException {
 
@@ -79,7 +79,30 @@ public void login(String uname, String pwd) throws InterruptedException {
 		 System.out.println("Login Successful");
 		 
 }
-@Test
+@Test(priority=2)
+public void settings() throws InterruptedException
+{
+	driver.findElement(By.xpath("//*[@id=\"navbar-collapse\"]/ul/li[3]/a/span/span[2]")).click();
+	driver.findElement(By.xpath("//*[@id=\"navbar-collapse\"]/ul/li[3]/ul/li[1]/a/span[2]")).click();
+	
+	driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div/div/form/div[1]/input")).clear();
+	driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div/div/form/div[2]/input")).clear();
+	driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div/div/form/div[3]/input")).clear();
+	driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div/div/form/div[1]/input")).sendKeys("Admini");
+	driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div/div/form/div[2]/input")).sendKeys("Adminss");
+	driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div/div/form/div[3]/input")).sendKeys("abc@localhost");
+	driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div/div/form/button")).click();
+	Thread.sleep(2000);
+	//String errMsg = driver.findElement(By.cssSelector("div.alert.alert-danger.ng-scope")).getText();
+	String errMsg = driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div/div/div[3]/strong")).getText();
+	System.out.println("error message: "+errMsg);
+	String expected = "An error has occurred!";
+	Assert.assertEquals(errMsg, expected);
+	System.out.println("The account editing is unsuccessful.The error message is :"+errMsg);
+	
+}
+
+@Test(priority=3)
 public void logout()
 {
 	driver.findElement(By.xpath("//*[@id=\"navbar-collapse\"]/ul/li[3]/a/span/span[2]")).click();
